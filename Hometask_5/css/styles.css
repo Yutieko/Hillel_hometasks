@@ -33,6 +33,6 @@ body {
   border: 2px solid blueviolet;
 }
 
-.fooetr .footer__copyright {
+.footer .footer__copyright {
   background-image: url(../img/pattern.jpg);
 }
