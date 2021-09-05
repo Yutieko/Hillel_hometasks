@@ -1,0 +1,38 @@
+body {
+  font-family: "Monda", sans-serif;
+  background: #c0c0c0;
+}
+
+.header {
+  border: 1px solid black;
+  color: blue;
+}
+
+.header__logo {
+  opacity: 0.7;
+  height: 100px;
+}
+
+.main {
+  padding: 3px;
+  margin: 10px;
+}
+
+.main__text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  text-align: right;
+}
+
+.main__aside--red {
+  background-color: red;
+}
+
+.footer {
+  border: 2px solid blueviolet;
+}
+
+.footer__copyright {
+  background-image: url(../img/pattern.jpg);
+}
