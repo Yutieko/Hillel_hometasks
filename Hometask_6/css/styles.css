@@ -1,0 +1,83 @@
+.header .header__title::first-letter {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: red;
+}
+
+.header .header__subtitle::first-line {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: red;
+}
+
+.main .main__text {
+  text-indent: 20px;
+  word-spacing: 1.5rem;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  direction: ltr;
+  vertical-align: top;
+}
+
+.main .main__text::after {
+  content: "\270D";
+  color: yellowgreen;
+}
+
+.main .main__text::selection {
+  color: yellowgreen;
+  background: green;
+}
+
+.main .main__content {
+  outline: 2px solid black;
+  height: 70px;
+  overflow: scroll;
+  line-height: 1.5em;
+}
+
+ul {
+  list-style: inside;
+}
+
+b:nth-child(2n) {
+  color: limegreen;
+}
+
+input:nth-of-type(2n-1) {
+  border: 1px dotted lightgreen;
+}
+
+input:hover {
+  background-color: orange;
+}
+
+input[type="email"] {
+  transition: background-color 0.9s ease;
+}
+
+input[type="tel"] {
+  pointer-events: none;
+}
+
+input[type="number"] {
+  visibility: hidden;
+}
+
+.pic {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  cursor: grab;
+}
+
+.footer .footer__phone::before {
+  content: "\2706";
+  color: red;
+}
