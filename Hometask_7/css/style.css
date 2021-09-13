@@ -1,3 +1,7 @@
+.left {
+  position: relative;
+}
+
 .position {
   height: 1050px;
 }
