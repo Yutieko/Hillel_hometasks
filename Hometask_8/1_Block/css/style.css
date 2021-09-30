@@ -1,0 +1,50 @@
+body {
+  overflow: hidden;
+}
+
+div {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  margin: 2px;
+}
+
+.header {
+  background-color: #4e6fb2;
+  width: 100%;
+  min-height: 100px;
+}
+
+.main {
+  background-color: #a6ff4b;
+  width: calc(100% - 40% - 12px);
+  min-height: calc(100vh - 212px);
+  float: left;
+}
+
+.sidenav {
+  background-color: #ea94a3;
+  width: 20%;
+  min-height: calc(100vh - 212px);
+  float: left;
+}
+
+.sidebar {
+  background-color: #ea94a3;
+  width: 20%;
+  min-height: calc(100vh - 212px);
+  float: left;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #709ff1;
+  width: 100%;
+  min-height: 100px;
+}

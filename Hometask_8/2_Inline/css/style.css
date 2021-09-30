@@ -1,0 +1,43 @@
+body {
+  overflow: hidden;
+}
+
+.structure div {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+}
+
+.header {
+  background-color: #4e6fb2;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 2px;
+}
+
+.main {
+  background-color: #a6ff4b;
+  width: calc(100% - 40% - 12px);
+  min-height: calc(100vh - 208px);
+}
+
+.sidenav {
+  background-color: #ea94a3;
+  width: 20%;
+  min-height: calc(100vh - 208px);
+}
+
+.sidebar {
+  background-color: #ea94a3;
+  width: 20%;
+  min-height: calc(100vh - 208px);
+}
+
+.footer {
+  background-color: #709ff1;
+  width: 100%;
+  min-height: 100px;
+}
