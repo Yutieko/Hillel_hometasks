@@ -1,0 +1,192 @@
+@media (min-width: 580px) {
+  :root {
+    --purple: #800380;
+    --blue: #6060a3;
+    --height: 250px;
+    --margin: 0 20px;
+  }
+
+  #inline-blocks,
+  #float,
+  #flex {
+    background-color: var(--purple);
+    min-height: 640px;
+  }
+
+  .inline_text > div,
+  .float_text > div,
+  .flex_text > div {
+    border: 1px solid black;
+    background-color: var(--blue);
+    min-height: var(--height);
+    margin: var(--margin);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  span {
+    margin-left: 40%;
+    line-height: var(--height);
+  }
+
+  aside > h2 {
+    margin-bottom: -8px;
+  }
+
+  .inline_text > div,
+  #inline-blocks > aside {
+    display: inline-block;
+    min-height: var(--height);
+  }
+
+  .inline_text > div {
+    width: 60%;
+  }
+
+  #inline-blocks > aside {
+    width: calc(100% - 60% - 100px);
+    border: 1px solid black;
+  }
+
+  #float > div {
+    width: 70%;
+    min-height: var(--height);
+  }
+
+  #float:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .float_text {
+    float: left;
+  }
+
+  #float > aside {
+    border: 1px solid black;
+    margin: 0 15px;
+    padding: 10px;
+    float: right;
+    min-width: calc(100% - 70% - 50px);
+    min-height: 500px;
+  }
+
+  .flex_container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex_container > div {
+    min-width: 70%;
+  }
+
+  .flex_container > aside {
+    background-color: var(--purple);
+    min-width: calc(100% - 70% - 35px);
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --purple: #800380;
+    --blue: #6060a3;
+    --height: 250px;
+    --margin: 0 20px;
+  }
+
+  #inline-blocks,
+  #float,
+  #flex {
+    background-color: var(--purple);
+    min-height: 640px;
+  }
+
+  .inline_text > div,
+  .float_text > div,
+  .flex_text > div {
+    border: 1px solid black;
+    background-color: var(--blue);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  span {
+    margin-left: 40%;
+    line-height: var(--height);
+  }
+
+  aside > h2 {
+    margin-bottom: -8px;
+  }
+
+  aside {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .inline_text {
+    margin-left: 10px;
+  }
+
+  .inline_text > div {
+    display: inline-block;
+    margin: -2px;
+    width: 30%;
+    height: var(--height);
+  }
+
+  #inline-blocks > aside {
+    display: inline-block;
+    width: calc(100% - 60% - 30px);
+    height: var(--height);
+  }
+
+  .float_text > div,
+  #float > aside {
+    float: left;
+    margin: 10px;
+    height: var(--height);
+  }
+
+  .float_text {
+    margin-left: 15px;
+  }
+
+  .float_text > div {
+    margin: -2px;
+    width: 50%;
+    height: var(--height);
+  }
+
+  #float:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .flex_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    min-height: var(--height);
+  }
+
+  .flex_text > div {
+    width: 50%;
+    margin: 0;
+  }
+
+  .flex_container > aside {
+    background-color: var(--purple);
+    width: 50%;
+    border: 1px solid black;
+    margin: 10px;
+  }
+}
