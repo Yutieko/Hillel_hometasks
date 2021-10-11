@@ -76,7 +76,10 @@
   #float > aside {
     float: left;
     margin: 10px;
-    height: var(--height);
+  }
+
+  #float > aside {
+    min-height: 250px;
   }
 
   .float_text {
