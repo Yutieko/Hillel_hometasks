@@ -1,40 +1,4 @@
 @media (min-width: 580px) {
-  :root {
-    --purple: #800380;
-    --blue: #6060a3;
-    --height: 250px;
-    --margin: 0 20px;
-  }
-
-  #inline-blocks,
-  #float,
-  #flex {
-    background-color: var(--purple);
-    min-height: 640px;
-  }
-
-  .inline_text > div,
-  .float_text > div,
-  .flex_text > div {
-    border: 1px solid black;
-    background-color: var(--blue);
-    min-height: var(--height);
-    margin: var(--margin);
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  span {
-    margin-left: 40%;
-    line-height: var(--height);
-  }
-
-  aside > h2 {
-    margin-bottom: -8px;
-  }
-
   .inline_text > div,
   #inline-blocks > aside {
     display: inline-block;
@@ -91,45 +55,6 @@
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --purple: #800380;
-    --blue: #6060a3;
-    --height: 250px;
-    --margin: 0 20px;
-  }
-
-  #inline-blocks,
-  #float,
-  #flex {
-    background-color: var(--purple);
-    min-height: 640px;
-  }
-
-  .inline_text > div,
-  .float_text > div,
-  .flex_text > div {
-    border: 1px solid black;
-    background-color: var(--blue);
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  span {
-    margin-left: 40%;
-    line-height: var(--height);
-  }
-
-  aside > h2 {
-    margin-bottom: -8px;
-  }
-
-  aside {
-    border: 1px solid black;
-    padding: 10px;
-  }
-
   .inline_text {
     margin-left: 10px;
   }
