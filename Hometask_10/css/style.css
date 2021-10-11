@@ -45,14 +45,7 @@ aside > h2 {
   flex-direction: column;
 }
 
-.flex_container > div {
-  /*background-color: var(--blue);*/
-  /*width: calc(100% - 20px);*/
-  /*min-width: calc(100% - 40% - 10px);*/
-}
-
 .flex_container > aside {
   background-color: var(--purple);
   min-width: calc(100% - 40% - 10px);
-  /*border: 1px solid black;*/
 }
