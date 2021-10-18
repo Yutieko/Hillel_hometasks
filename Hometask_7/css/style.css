@@ -55,7 +55,7 @@ b {
   margin: auto;
   display: flex;
   align-items: center;
-  float: right;
+  /*float: right;*/
 }
 
 .position .position__C {
