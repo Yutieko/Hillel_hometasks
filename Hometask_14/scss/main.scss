@@ -201,7 +201,7 @@ body {
   display: flex;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1180px) {
     flex-direction: column;
   }
 
@@ -213,7 +213,7 @@ body {
       transform: translateX(-165px);
       padding: 10px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1180px) {
         width: 50vw;
       }
 
@@ -241,6 +241,10 @@ body {
       margin-top: 20px;
     }
 
+    @media (max-width: 1280px) {
+      padding-left: 10vm;
+      max-width: 100%;
+    }
     .btn {
       margin-top: 40px;
     }
@@ -281,7 +285,7 @@ body {
     left: 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1262px) {
     display: none;
   }
 }
@@ -298,7 +302,13 @@ body {
   background-repeat: no-repeat;
   justify-content: flex-end;
   overflow: hidden;
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
 
+  @media (max-width: 1183px) {
+    background-image: none;
+  }
   .oval-top {
     position: absolute;
     top: -10px;
@@ -324,6 +334,12 @@ body {
     top: 78px;
     left: 0px;
     z-index: 1;
+    @media (max-width: 1280px) {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      top: 50px;
+    }
   }
 
   .dashboard-background {
@@ -331,6 +347,9 @@ body {
     position: absolute;
     top: 34px;
     left: 0px;
+    @media (max-width: 1280px) {
+      display: none;
+    }
   }
 
   .col {
@@ -339,7 +358,12 @@ body {
     padding-bottom: 92px;
     padding-left: 90px;
     padding-right: 30px;
-    /*@media (max-width: 1050px) {
+
+    @media (max-width: 1183px) {
+      background-color: #58bebf;
+      max-width: 100vw;
+    }
+    @media (max-width: 1280px) {
       padding-left: 60px;
       padding-top: 70px;
     }
@@ -352,39 +376,43 @@ body {
     }
     @media (max-width: 903px) {
       min-width: 100%;
-      padding-top: 340px;
+      /*padding-top: 340px;*/
       justify-content: flex-start;
     }
-    @media (max-width: 576px) {
+    /*@media (max-width: 576px) {
       padding-top: 200px;
     }*/
+
     .heading {
       font-size: 40px;
       color: #ffffff;
-      /*@media (max-width: 903px) {
+      @media (max-width: 1280px) {
         color: $darkgrey;
         font-size: 30px;
-      }*/
+      }
     }
     .text {
       color: #ffffff;
       margin-top: 15px;
-      /*@media (max-width: 903px) {
+      @media (max-width: 1280px) {
         color: $darkgrey;
-      }*/
+      }
     }
+
     .btn {
       margin-top: 30px;
     }
+
     .play {
       margin-left: 20px;
       background-color: #ffffff;
       color: $darkgrey;
       text-align: center;
       padding: 18px 25px;
-      /*@media (max-width: 451px) {
+      @media (max-width: 451px) {
         margin-left: 5px;
-      }*/
+      }
+
       img {
         display: inline-block;
         margin-right: 8px;
