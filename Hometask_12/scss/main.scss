@@ -30,60 +30,73 @@ body {
   height: 120px;
   border-radius: 100%;
   background-color: gray;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
+  animation-duration: 15s;
+  /*animation-iteration-count: infinite;*/
 }
 
 .red {
-  /*background-color: red;*/
   position: absolute;
   top: 70px;
   left: 700px;
-  animation: bgred 2s alternate 1s;
+  animation: bgred 4s infinite;
   transition: 0.3s ease;
 }
 
 .yellow {
-  /*background-color: yellow;*/
   position: absolute;
   top: 220px;
   left: 700px;
-  animation: bgyellow 2s alternate 1s;
+  animation: bgyellow 4s infinite;
 }
 
 .green {
-  /*background-color: green;*/
   position: absolute;
   top: 370px;
   left: 700px;
-  animation: bggreen 2s alternate 1s;
+  animation: bggreen 4s infinite;
 }
 
 @keyframes bgred {
-  0% {
-    opacity: 0;
-  }
-  100% {
+  0%,
+  50% {
     background-color: red;
-    opacity: 1;
+  }
+
+  51%,
+  100% {
+    background-color: grey;
   }
 }
 
 @keyframes bgyellow {
-  0% {
-    opacity: 0;
-  }
+  0%,
+  24%,
+  51%,
+  72%,
   100% {
+    background-color: grey;
+  }
+  25%,
+  50%,
+  82%,
+  99% {
     background-color: yellow;
-    opacity: 1;
   }
 }
 
 @keyframes bggreen {
-  0% {
-    opacity: 0;
+  0%,
+  50%,
+  73%,
+  76%,
+  80% {
+    background-color: grey;
   }
-  100% {
+  51%,
+  72%,
+  77%,
+  79% {
     background-color: green;
-    opacity: 1;
   }
 }
